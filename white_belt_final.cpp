@@ -23,7 +23,7 @@ public:
         }
         day = new_day;
     }
-    Date(const string& date) {
+    explicit Date(const string& date) {
         int new_year, new_month, new_day;
         bool ok = true;
         istringstream date_stream(date);
